@@ -1,0 +1,162 @@
+.ghostintro{
+    width: 660px;
+    height: 60px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #FFFFFF;
+    text-transform: uppercase;
+}
+
+
+
+.ghostintro:hover{
+    transition: 0.2s ease-out;
+    border: 1px solid #25A1DC;
+    text-decoration: underline;
+
+}
+
+
+.homepageReviewbtn{
+    width: 20rem;
+    height: 60px;
+    color: #FFFFFF;
+    background-color: black;
+    border: 1px solid black;
+    text-transform: uppercase;
+}
+.homepageReviewbtn:hover{
+    background-color: #25A1DC;
+    transition: 0.2s ease-out;
+    text-decoration: underline;
+
+}
+
+
+.promobutton{
+    width:  6rem;
+    height: 2rem;
+    background-color: #AFAFAF;
+    position: absolute;
+    margin-top: 2rem;
+}
+.nieuwsbriefButton{
+    background-color: #F3ED85;
+    height: 2.5rem;
+    width: 9rem;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #F3ED85;
+
+}
+.nieuwsbriefButton:hover{
+    background-color: #25A1DC;
+    height: 2.5rem;
+    width: 9rem;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #25A1DC;
+    transition: 0.2s ease-out;
+    text-decoration: underline;
+
+}
+
+.reserverenButton{
+    width: 30rem;
+    height: 60px;
+    color: #FFFFFF;
+    background-color: #EE7544;
+    border: 1px solid black;
+    text-transform: uppercase;
+}
+
+.reserverenButton:hover{
+    text-decoration: underline;
+    transition: 0.2s ease-out;
+    background-color: #25A1DC;
+}
+
+.collectiebtn{
+    margin-top: 1.1rem;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins', Fallback, sans-serif;
+}
+.collectiebtn:hover{
+    margin-top: 1.1rem;
+    background-color: #25A1DC;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins', Fallback, sans-serif;
+    text-decoration: underline;
+    transition: 0.2s ease-out;
+}
+
+.eventButton{
+    margin-left: 12rem;
+    margin-bottom: 1px;
+    width: 5rem;
+    height: 2rem;
+    color: white;
+    background-color: black;
+}
+.eventButton:hover{
+    text-decoration: underline;
+    transition: 0.2s ease-out;
+    background-color: #25A1DC;
+}
+.searchBtn button{
+    height: 4rem;
+    width: 10rem;
+}
+
+.formsendBtn{
+    width: 10rem !important;
+    height: 2rem !important;
+    text-transform: uppercase !important;
+    background-color: black;
+    color: white;
+}
+
+.ghostintroBTN{
+    width: 20rem;
+    height: 60px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    text-transform: uppercase;
+}
+.ghostintroBTN:hover{
+    border: 2px solid #25A1DC;
+    transition: 0.2s ease-out;
+    text-decoration: underline;
+}
+
+
+.backbtn{
+    width: 5rem;
+    height: 3rem;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    text-transform: uppercase;
+}
+
+.formReview{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', Fallback, sans-serif;
+    margin: 1rem;
+}
+
+.checkCode{
+    background-color: #E3E3E3;
+    border-radius: 11px;
+    width: 84px;
+}
+.checkCode:hover{
+    background-color: #25A1DC;
+    transition: 0.2s ease-out;
+    text-decoration: underline;
+}

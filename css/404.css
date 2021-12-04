@@ -1,0 +1,22 @@
+.errorSection{
+    background-color: black;
+
+    }
+
+.errorBericht{
+    background-color: white;
+    width: 90vw;
+    height: 95vh;
+    margin: 0 5rem;
+    padding: 1px 5rem;
+    text-align: center;
+}
+.errorBericht h2{
+    color: black;
+}
+.errorBericht img{
+    width: 40rem;
+}
+.buttonGroup{
+    margin-top: 2rem;
+}

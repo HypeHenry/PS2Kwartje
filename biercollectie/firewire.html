@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bierbouwerij het Kwartje | Collectie</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <!--    iconfonts -->
+    <link rel=" stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../javascript/lightbox.js" defer></script>
+    <script src="../javascript/maps.js" defer></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+
+
+
+
+
+
+</head>
+<body>
+<header class="headerSmall">
+    <nav>
+        <ul>
+            <li><a href="../brouwerij.html">brouwerij</a></li>
+            <li><a href="../biercollectie.html">biercollectie</a></li>
+            <li><a href="../index.html"><img src="../img/navbar/logo.png"></a></li>
+            <li><a href="../arrangement.html">arrangement</a></li>
+            <li><a href="../event.html">events</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="detailBier">
+    <a href="../biercollectie.html"> <button class="backbtn">&lt; Terug</button></a>
+    <div class="rowPics">
+        <div class="row">
+            <div class="column">
+                <img src="../img/detailpagina/row/img1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="../img/detailpagina/row/img2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="../img/detailpagina/row/img3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="../img/detailpagina/row/img4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="../img/detailpagina/row/img1_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="../img/detailpagina/row/img2_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="../img/detailpagina/row/img3_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="../img/detailpagina/row/img4_wide.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="columnI">
+                    <div class="column">
+                        <img class="demo" src="../img/detailpagina/row/img1.png" onclick="currentSlide(1)" alt="bier">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="../img/detailpagina/row/img2.png" onclick="currentSlide(2)" alt="bier">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="../img/detailpagina/row/img3.png" onclick="currentSlide(3)" alt="bier">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="../img/detailpagina/row/img4.png" onclick="currentSlide(4)" alt="bier">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="highlight">
+        <img src="../img/detailpagina/firewire.png" alt="bierfles">
+    </div>
+    <div class="BierInfo">
+        <article>
+            <h4>peated porter</h4>
+            <h3>FIREWIRE</h3>
+            <p> Noordtsingle is een Amerikaans Tarwebier. Het recept lijkt op de Duitse weizen het verschil zit hem in de gist en het gebruik van de hop. Noordtsingle is gebrouwen uit tarwe en gerstemout, Amerikaanse gist en cascade hop. Door uitsluitend één hop te gebruiken is dit bier fris krachtig en vol van smaak. Proefnotitie: Vol bier met mooie frisse tonen van hop limoenschil en mout. Zeer dorstlessend.</p>
+        </article>
+        <hr>
+        <p>Percentage</p>
+        <div class="percentageBlock">
+            <div class="percentage"><p>alc&#58; 5.5&#37;</p></div>
+            <div class="percentage"><p>ebu&#58; 19</p></div>
+            <div class="percentage"><p>ebc&#58; 14</p></div>
+            <div class="percentage"><p>cal&#58; 126</p></div>
+        </div>
+        <div class="locatieZoeken">
+            <button class="formsendBtn" onclick="showMap()"> locactie zoeken</button> <p>Op basis van locatievoorzieningen van je browser.</p>
+        </div>
+        <div id="showmap">
+            <div id="map"></div>
+            <div class="map-overlay top"></div>
+        </div>
+    </div>
+    <div class="promovid">
+        <h3>Promo</h3>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zB1yWY2u_L4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+</section>
+<section class="powerreview">
+    <div class="embassy formbox">
+        <h3> Wat zeggen de makers over dit product ?</h3>
+        <div class="ceoReview">
+            <article>
+                <img src="../img/detailpagina/amba.png" alt="ambasadeur">
+                <div class="bier-review">
+                    <h4>Henry Barima</h4>
+                    <blockquote>
+                        <p> wat ik lekker vind van deze bier: <br>
+                            <br>
+                            <q> De textuur van deze beer is heerlijk</q>
+                        </p>
+                    </blockquote>
+                </div>
+            </article>
+            <article>
+                <img src="../img/detailpagina/amba.png" alt="ambasadeur">
+                <div class="bier-review">
+                    <h4>Henry Barima</h4>
+                    <blockquote>
+                        <p> wat ik lekker vind van deze bier: <br>
+                            <br>
+                            <q> De textuur van deze beer is heerlijk</q>
+                        </p>
+                    </blockquote>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="contactForm reviewWrite">
+    <div class="formbox">
+        <div class="testamonials">
+            <h4>reviews:</h4>
+            <div class="container">
+                <div class="reviewPic">
+                    <i class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i>
+                </div>
+                <div class="review-info">
+                    <h6><span>Merel van Dijk</span></h6>
+                    <p> 6 maart 2019</p>
+                    <p>Hazy, straw yellow with a thin, frothy, almost stable, white head. Sweetish, artificial, slightly fruity aroma of lemon peel, dextrose and banana juice. Very sweet, quite artificial, a bit fruity taste of banana juice, lots of dextrose and a touch of lemon peel, followed by a short, minimally bitter, a little sourish and a bit yeasty finish. Medium body, smooth and slightly effervescent mouthfeel, soft carbonation. Drinkable, but not really tasty.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="reviewPic">
+                    <i class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i>
+                </div>
+                <div class="review-info">
+                    <h6><span>mark rutte</span></h6>
+                    <p> 6 maart 2019</p>
+                    <p>Lekker verfrissend witbiertje. Niks mis mee. Mooie troebele witgele kleur. Mooie vaste fijnmazige schuimkraag. Geschonken in glas. Geur tamelijk onbeduidend.. Smaak daarentegen is prima: Banaan en wat citrus. Daar hoef je geen cola voor te bestellen</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="reviewPic">
+                    <i class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i>
+                </div>
+                <div class="review-info">
+                    <h6><span>Chris willem</span></h6>
+                    <p> 12 maart 2019</p>
+                    <p>Eerste indruk ik proef meteen de volle bananensmaak en het is nog lekker ook. Fris fruitig ruikend witbiertje. Lichte troebel witgeel biertje met een witte schuimkraag. Zoete maar redelijk vlakke smaak van fruit en met name banaan. Maar heeft ook een licht zuurtje en een zachte bitter. Eerlijk gezegd er zijn “normale” witbiertjes die stuk minder lekker smaken. Zeker positief verrast door de nieuwe generatie alcoholvrije witbiertjes.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="reviewPic">
+                    <i class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i>
+                </div>
+                <div class="review-info">
+                    <h6><span>jan Fox</span></h6>
+                    <p>16 maart 2019</p>
+                    <p>Was gewoon lekker jezus. </p>
+                </div>
+            </div>
+
+            <button class="formsendBtn">zie meer </button>
+        </div>
+    </div>
+    <div class="formbox ">
+        <div class="formContact">
+            <form action="#" method="post">
+                <div class="formReview">
+                    <h4>SCHRIJF EEN REVIEW</h4>
+                    <label for="code"><p>Code&#58;&#42; </p></label>
+                    <div class="rowForm">
+                        <input type="text" id="code" value="code staat op bierfles" required>
+                        <input class="checkCode" type="submit" value="check">
+                    </div>
+                </div>
+
+            </form>
+            <form action="#" method="post">
+                <div class="formID">
+                    <label for="naam"><p>voornaam&#58;&#42; </p></label>
+                    <input type="text" id="naam" value="john doe" required>
+                </div>
+
+                <div class="formID">
+                    <label for="onderwerp"><p>achternaam&#58;&#42; </p></label>
+                    <input type="text" id="onderwerp" value="test">
+                </div>
+
+                <div class="formID">
+                    <label for="email"><p>E-mail&#58;&#42; </p></label>
+                    <input type="email" id="email" value="john@doe.com" required>
+                </div>
+
+                <div class="formID">
+                    <label for="telefoonNummers"><p>Telefoonnummers&#58; </p></label>
+                    <input type="number" id="telefoonNummers" value="0623456789">
+                </div>
+
+                <div class="formNet formID">
+                    <label for="opmerking">Opmerking&#58; </label>
+                    <textarea id="opmerking"> </textarea>
+                    <input type="submit"  class="formsendBtn" value="verzenden">
+                    <p> &#42; &#61; verplichte velden </p>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</section>
+<footer>
+    <div class="menu">
+        <ul>
+            <li><img src="../img/navbar/logo.png" alt="logo"></li>
+            <li><a href="../contact.html">openingstijden</a></li>
+            <li><a href="../contact.html">vacature</a></li>
+            <li><a href="../404.html">retail</a></li>
+            <li><a href="../faq.html">faq</a></li>
+            <li><a href="../contact.html">contact</a></li>
+        </ul>
+    </div>
+    <div class="nieuwsbrief">
+        <div class="footertext">
+            <h4>inschrijven nieuwsbrief</h4>
+            <p>Blijf op de hoogte van de allerlaaste aanbiedingen, speciale actie's, die voor jou  intersaante evenementen en meer.  </p>
+        </div>
+        <form action="#" method="post">
+            <label for=fanmail></label>
+            <input type="email" id="fanmail" value="vul E-mail adres in">
+            <input type="submit"  class="nieuwsbriefButton" value="verzenden">
+        </form>
+        <div class="socialIcons">
+            <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-medium fa-3x" aria-hidden="true"></i>
+        </div>
+    </div>
+</footer>
+<div class="onderfooter">
+    <p>&copy; 2020. all rights reserved</p>
+</div>
+</body>
+</html>

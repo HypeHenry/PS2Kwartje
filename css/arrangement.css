@@ -1,0 +1,21 @@
+.arrangementWhite h3{
+    color: black;
+}
+.arrangementBlack{
+    padding-top: 2rem ;
+    height: 50vh;
+    background-color: black;
+    flex-direction: row-reverse;
+    color: white;
+}
+
+arrangementBlack h3{
+    color: white !important;
+}
+.arrangementBlack p{
+    color: white;
+}
+
+.white{
+    color: white !important;
+}

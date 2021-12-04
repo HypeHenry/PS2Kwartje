@@ -1,0 +1,95 @@
+.openingstijden{
+    background-color: black;
+    height: 30vh;
+    color: white;
+}
+.openingstijden article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.openingstijden p{
+    font-family: 'Nexa', Fallback, sans-serif;
+}
+
+.contactForm{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contactForm .formbox{
+    margin-top: 1rem;
+}
+
+.formbox{
+    border:  1px solid #000000;
+    box-shadow: 0px 3px 6px #00000029;
+    width: 750px;
+    height: auto;
+}
+
+.vacature h3
+{
+    color: black;
+    text-align: start;
+    margin-left: 2rem;
+}
+
+.job {
+    background-color: black;
+    width: 445px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10rem;
+    margin-top: 10rem;
+}
+.job p {
+    color: white;
+    margin-top: 4rem;
+    font-family: 'Nexa', Fallback, sans-serif;
+}
+
+.formContact h3 {
+    color: black;
+    text-align: start;
+    margin-left: 2rem;
+}
+
+
+.formContact form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.formID{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', Fallback, sans-serif;
+    margin: 1rem;
+}
+.formNet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formID input{
+    width: 300px;
+    height: 2.2rem;
+}
+
+.formNet textarea{
+    width: 40rem;
+    height: 259px;
+}
+
+.formNet input{
+    margin-top: 7px;
+    margin-left: 15rem;
+}

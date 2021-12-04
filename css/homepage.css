@@ -1,0 +1,140 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h3{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+section h5{
+    font-family: 'Nexa-Light', Fallback, sans-serif;
+    font-weight: 100 ;
+}
+
+.reviewsection h3{
+    color: black;
+}
+blockquote p{
+    font-family: 'Poppins', Fallback, sans-serif;
+    font-size: 14px;
+}
+blockquote q {
+    font-style: italic;
+}
+
+blockquote q {
+    font-family: Georgia Fallback Times, serif;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+article{
+    display: flex;
+    flex-direction: row;
+}
+
+.reviewsection article img{
+    width: 230px;
+    height: 321px;
+}
+.reviewsection{
+    height: 70vh;
+}
+
+
+.bier-review{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 446px;
+    margin-left: 2rem;
+}
+
+.promosection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: black;
+    height: 60vh;
+
+}
+
+.promosection article{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+
+
+.promo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.promo img{
+    position: absolute;
+    width: 30rem;
+    height: auto;
+}
+
+.promo button{
+    position: relative;
+}
+#arcade{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 440px;
+    background:  transparent linear-gradient(180deg, #E3E3E3 0%, #1E344E 1%, #3F1D34 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #311F39;
+}
+#arcade img{
+    width: 19rem;
+    margin-top: 10px;
+    position: absolute;
+}
+#arcade button{
+    position: relative;
+}
+
+#map{
+    width: 100vw;
+    height: 50vh;
+}
+
+.mapboxgl-popup-close-button {
+    font-size: 16px;
+    color: #fff;
+}
+.mapboxgl-popup-content {
+    padding: 20px 25px 15px 20px;
+    color: #fff;
+    background-color: #011126;
+    text-align: center;
+}
+.mapboxgl-popup-content h1 {
+    font-family: 'Poppins', Fallback, sans-serif;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+    border-top-color: #011126;
+}
+
+.headerSmall{
+    height: 10rem;
+    background-color: black;
+}
+
+

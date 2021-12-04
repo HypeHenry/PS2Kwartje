@@ -1,0 +1,295 @@
+.detailBier{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.detailBier h3{
+    color: black;
+    text-align: start;
+}
+
+.detailBier article{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.rowPics{
+    margin-top: 20rem;
+}
+
+.BierInfo{
+    width: 700px;
+}
+.BierInfo{
+    font-family: 'Nexa', Fallback, sans-serif;
+    font-weight: bold;
+}
+
+.percentage{
+    background-color: #E3E3E3;
+    width: 7rem;
+    height: 2.5rem;
+    padding: 1px;
+    text-align: center;
+    margin-right: 1rem;
+    color: black;
+    font-family: 'Poppins', Fallback, sans-serif;
+    text-transform: uppercase;
+}
+.percentageBlock{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.locatieZoeken{
+    display: flex;
+}
+.locatieZoeken button{
+    margin-right: 1rem;
+}
+#showmap{
+    display: none;
+}
+
+#showmap #map{
+    width: 500px;
+    margin-top: 1rem;
+
+
+}
+
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+    width: 25%;
+}
+.column img{
+    width: 5rem;
+}
+.columnI{
+    display: flex;
+    flex-direction: row;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.promovid{
+    margin-top: 1rem;
+    margin-left: 9rem;
+}
+.powerreview{
+    display: flex;
+    width: 80vw;
+    margin: 3rem 5rem
+}
+
+.embassy{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin:  0 2rem;
+
+
+}
+.embassy h3{
+    color: black;
+    font-size: 30px;
+    text-align: start;
+}
+.embassy img{
+    width: 50px;
+    height: 50px;
+}
+.ceoReview{
+    display: flex;
+    justify-content: space-evenly;
+    /*margin: 2rem 1rem;*/
+}
+.reviewWrite{
+    height: 100vh;
+    margin-bottom: 5rem;
+}
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: flex;
+}
+
+.container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.container button{
+    margin: 1rem 5rem;
+}
+
+.container span, .container p {
+    font-size: 14px;
+    margin-right: 15px;
+    font-family: 'Nexa', Fallback, sans-serif;
+    font-weight: bold;
+}
+
+.rowForm{
+    display: flex;
+    flex-direction: row;
+}
+.testamonials{
+    padding: 2rem;
+}
+
+.testamonials .formsendBtn{
+    margin: 1rem 17rem;
+}
+
+.reviewTestamonials{
+    padding: 2rem;
+}
+
+.formReview input{
+    width: 19rem;
+    height: 2.2rem;
+}
+
+hr{
+    width: auto;
+}
+
+.reviewPic{
+    margin-right: 2rem;
+}

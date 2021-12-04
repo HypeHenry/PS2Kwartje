@@ -1,0 +1,32 @@
+// Dit is voor de nieuwsbrief bij de footer
+
+
+If input type = @ & .
+    Verzend data to mailchimp
+	Mailchimp voegt het toe in hun datalist databank
+
+//
+
+
+// Review achter laten
+
+
+IF code heeft meer dan 2 karakters 
+    check if code voorkomt in database
+        Check Voornaam is ingevuld *required
+        check achternaam is ingevuld*required
+        Check e-mail geldig is *required
+        check opmerking ingevuld
+            check of scheldwoorden voorkomen uit datalijst scheldwoorden
+
+         Waneer het op Verzend drukt komt het op de review pagina
+
+
+// zoeken naar een event
+
+	if soort eventzoekbak heeft meer dan 5 karakters 
+		zoek naar event 
+	if waar eventzoekbak heeft meer dan 5 karakters 
+		zoek naar event 
+	if soort datum is correct is ingevuld 
+		zoek naar event 

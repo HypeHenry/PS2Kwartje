@@ -1,0 +1,138 @@
+/* font */
+
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url("../font/Nexa/NexaBold.otf") format('otf');
+}
+@font-face {
+    font-family: 'Nexa-Light';
+    font-weight: 100;
+    src: url("../font/Nexa/NexaLight.otf") format('otf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../font/Poppins/Poppins-Bold.ttf") format('ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url("../font/Poppins/Poppins-SemiBoldItalic.ttf") format('ttf');
+    font-weight:  bold;
+    font-style: italic;
+}
+footer a:link{
+    text-decoration: none;
+    color: white;
+}
+footer a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+html {
+    font-size: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    font-family: 'Poppins', Fallback, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav a {
+    color: white;
+}
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:active {
+    text-decoration: underline;
+}
+
+.active1{
+    text-decoration: underline;
+}
+
+nav{
+    text-transform: uppercase;
+    font-family: 'Poppins', Fallback, sans-serif;
+}
+
+footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: #000;
+    text-transform: uppercase;
+    font-family: 'Nexa', Fallback, sans-serif;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+}
+.menu li{
+    margin-left: 5rem;
+    margin-right: auto;
+}
+.menu li img{
+    width: 200px;
+    height: 200px;
+}
+.nieuwsbrief{
+    margin-left: 10rem;
+    margin-right: auto;
+}
+
+.nieuwsbrief input[type=email]{
+    width: 15rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+}
+.nieuwsbrief input[type=submit]{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.addBlack{
+    color: black;
+}
+form{
+    display: flex;
+}
+.footertext h4{
+    color: white;
+}
+.footertext{
+    color: white;
+    text-transform: None;
+}
+.socialIcons{
+    margin-top: 1rem;
+    color: white;
+}
+
+
+.onderfooter{
+    font-family: 'Poppins', Fallback, sans-serif;
+    background-color: white;
+    margin-left: 10rem;
+    font-size: 14px;
+}

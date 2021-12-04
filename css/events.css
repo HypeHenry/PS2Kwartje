@@ -1,0 +1,74 @@
+.eventPage h3{
+    color: black;
+    text-align: start;
+    margin-left: 5rem;
+}
+.event-roll img {
+    width: 350px;
+}
+.event-roll{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event-text h5{
+    font-family: 'Poppins', Fallback, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+.event-text p{
+    font-family: 'Nexa-Light', Fallback, sans-serif;
+}
+
+
+.event-roll article{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    align-items: center;
+
+}
+
+.event-card{
+    border: 1px black solid;
+    display: flex;
+    flex-direction: row;
+}
+
+.date{
+    padding: 1rem;
+    text-align: center;
+}
+.date h4{
+    font-size: 18px;
+}
+
+.search{
+    background-color: black;
+    height: 10vh;
+}
+
+.search form{
+    margin-left: 5rem;
+}
+.search input{
+    height: 4rem;
+    margin-right: 1rem;
+    width: 20rem;
+    font-family: 'Poppins', Fallback, sans-serif;
+    font-size: 16px;
+}
+.search input[type=submit]{
+    border: 0;
+    background-color: #F3ED85;
+}.search input[type=submit]:hover{
+     border: 0;
+    color: white;
+     text-decoration: underline;
+     transition: 0.2s ease-out;
+     background-color: #25A1DC;
+}
