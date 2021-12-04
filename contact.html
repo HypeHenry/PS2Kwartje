@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bierbouwerij het Kwartje | Collectie  </title>
+
+    <!--    maps -->
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+    <script src="javascript/maps.js" defer></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+
+
+    <link href="css/main.css" rel="stylesheet">
+    <!--    iconfonts -->
+
+    <link rel=" stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<header class="jumbotron contact">
+    <nav>
+        <ul>
+            <li><a href="brouwerij.html">brouwerij</a></li>
+            <li><a href="biercollectie.html">biercollectie</a></li>
+            <li><a href="index.html"><img src="img/navbar/logo.png"></a></li>
+            <li><a href="arrangement.html">arrangement</a></li>
+            <li><a href="event.html">events</a></li>
+        </ul>
+    </nav>
+
+    <blockquote>
+        <h2>contact</h2>
+    </blockquote>
+</header>
+<section class="contactForm">
+    <div class="formbox">
+        <div class="vacature">
+            <h3>Vacature: </h3>
+            <div class="job">
+                <p>Momenteel geen vacatures vrij.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="formbox">
+        <div class="formContact">
+            <h3>contact:</h3>
+            <form action="php/sendContact.php" method="post">
+                <div class="formID">
+                    <label for="name"><p>Naam&#58;&#42; </p></label>
+                    <input type="text" id="name" value="john doe" required>
+                </div>
+
+                <div class="formID">
+                    <label for="subject"><p>Onderwerp&#58;&#42; </p></label>
+                    <input type="text" id="subject" value="test">
+                </div>
+
+                <div class="formID">
+                    <label for="email"><p>E-mail&#58;&#42; </p></label>
+                    <input type="email" id="email" value="john@doe.com" required>
+                </div>
+
+                <div class="formID">
+                    <label for="telephone"><p>Telefoonnummers&#58; </p></label>
+                    <input type="number" id="telephone" value="0623456789">
+                </div>
+
+                <div class="formNet formID">
+                    <label for="comments">Opmerking&#58; </label>
+                    <textarea id="comments"> </textarea>
+                    <input type="submit"  class="formsendBtn" value="verzenden">
+                    <p> &#42; &#61; verplichte velden </p>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="openingstijden" >
+    <article>
+        <h2> openingstijd</h2>
+        <p>MA - VRIJ: 09:00 T/M 17:00 <br> ZA: 10:00 T/M 18:00 <br> ZO: GESLOTEN</p>
+    </article>
+</section>
+
+<section>
+    <div id="map"></div>
+    <div class="map-overlay top">
+    </div>
+</section>
+<footer>
+    <div class="menu">
+        <ul>
+            <li><img src="img/navbar/logo.png" alt="logo"></li>
+            <li><a class="active1">openingstijden</a></li>
+            <li><a class="active1">vacature</a></li>
+            <li><a href="404.html">retail</a></li>
+            <li><a href="faq.html">faq</a></li>
+            <li><a class="active1">contact</a></li>
+        </ul>
+    </div>
+    <div class="nieuwsbrief">
+        <div class="footertext">
+            <h4>inschrijven nieuwsbrief</h4>
+            <p>Blijf op de hoogte van de allerlaaste aanbiedingen, speciale actie's, die voor jou  intersaante evenementen en meer.  </p>
+        </div>
+        <form action="#" method="post">
+            <label for=fanmail></label>
+            <input type="email" id="fanmail" value="vul E-mail adres in">
+            <input type="submit"  class="nieuwsbriefButton" value="verzenden">
+        </form>
+        <div class="socialIcons">
+            <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-medium fa-3x" aria-hidden="true"></i>
+        </div>
+    </div>
+</footer>
+<div class="onderfooter">
+    <p>&copy; 2020. all rights reserved</p>
+</div>
+</body>
+</html>

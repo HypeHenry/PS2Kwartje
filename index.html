@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bierbouwerij het Kwartje </title>
+
+<!--    maps -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+    <script src="javascript/maps.js" defer></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet">
+
+    <!--    iconfonts -->
+
+    <link rel=" stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+        <header id="welcome">
+            <nav>
+                <ul>
+                    <li><a href="brouwerij.html">brouwerij</a></li>
+                    <li><a href="biercollectie.html">biercollectie</a></li>
+                    <li><a><img src="img/navbar/logo.png"></a></li>
+                    <li><a href="arrangement.html">arrangement</a></li>
+                    <li><a href="event.html">events</a></li>
+                </ul>
+            </nav>
+
+            <blockquote>
+                <h2>"craftbier uit den haag"</h2>
+                <h1>bierbouwerij kwartje</h1>
+                <a href="biercollectie.html" > <button class="ghostintro">Bekijk ons biercollectie</button></a>
+            </blockquote>
+        </header>
+        <main>
+            <section class="reviewsection" >
+                <h3>Laatste Reviews</h3>
+                <div class="reviews">
+                    <article>
+                        <div class="bier-info">
+                            <img src="img/bier/brute0.png" alt="Brute force 0.0 bier">
+                            <h4>Brute Force</h4>
+                            <h5>Imperial stout</h5>
+                        </div>
+                        <div class="bier-review">
+                            <h4>Henry Barima</h4>
+                            <blockquote>
+                                <p> wat ik lekker vind van deze bier: <br>
+                                    <br>
+                                <q> De textuur van deze beer is heerlijk</q>
+                                </p>
+                            </blockquote>
+                            <a href="biercollectie/bruteforce.html"> <button class="homepageReviewbtn">Meer Info</button></a>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="bier-info">
+                            <img src="img/bier/fresh.png" alt="Brute force 0.0 bier">
+                            <h4>REF5RESH</h4>
+                            <h5>WHITE IPA</h5>
+                        </div>
+                        <div class="bier-review">
+                            <h4>Henry Barima</h4>
+                            <blockquote>
+                                <p> wat ik lekker vind van deze bier: <br>
+                                    <br>
+                                    <q> Lekker fris en fruitig</q>
+                                </p>
+                            </blockquote>
+                            <a href="biercollectie/ref5resh.html"> <button class="homepageReviewbtn">Meer Info</button></a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+<!-- promo-->
+            <section class="promosection">
+                    <article>
+                        <div class="promo">
+                            <img src="img/promo/promo.png" alt="promo">
+                            <a href="biercollectie/bruteforce.html"> <button class="promobutton">bekijk</button></a>
+                        </div>
+                    </article>
+                    <article>
+                        <div id="arcade"><img src="img/promo/poster-arcade.png">
+                            <a href="event.html"><button class="promobutton" >join</button></a>
+                        </div>
+                    </article>
+            </section>
+            <!--  maps -->
+            <section>
+                <div id="map"></div>
+                <div class="map-overlay top">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="menu">
+                <ul>
+                    <li><img src="img/navbar/logo.png" alt="logo"></li>
+                    <li><a href="contact.html">openingstijden</a></li>
+                    <li><a href="contact.html">vacature</a></li>
+                    <li><a href="404.html">retail</a></li>
+                    <li><a href="faq.html">faq</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+            <div class="nieuwsbrief">
+                <div class="footertext">
+                    <h4>inschrijven nieuwsbrief</h4>
+                    <p>Blijf op de hoogte van de allerlaaste aanbiedingen, speciale actie's, die voor jou  intersaante evenementen en meer.  </p>
+                </div>
+                <form action="#" method="post">
+                    <label for=fanmail></label>
+                <input type="email" id="fanmail" value="vul E-mail adres in">
+                    <input type="submit"  class="nieuwsbriefButton" value="verzenden">
+                </form>
+                <div class="socialIcons">
+                    <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+                    <i class="fa fa-medium fa-3x" aria-hidden="true"></i>
+                </div>
+            </div>
+        </footer>
+        <div class="onderfooter">
+            <p>&copy; 2020. all rights reserved</p>
+        </div>
+</body>
+</html>

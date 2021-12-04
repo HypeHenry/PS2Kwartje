@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bierbouwerij het Kwartje | Arrangement  </title>
+
+    <!--    maps -->
+    <link href="css/main.css" rel="stylesheet">
+    <!--    iconfonts -->
+
+    <link rel=" stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="javascript/lightbox.js" defer></script>
+
+
+</head>
+<body>
+<header class="jumbotron arrangement">
+    <nav>
+        <ul>
+            <li><a href="brouwerij.html">brouwerij</a></li>
+            <li><a href="biercollectie.html">biercollectie</a></li>
+            <li><a href="index.html"><img src="img/navbar/logo.png"></a></li>
+            <li><a class="active1">arrangement</a></li>
+            <li><a href="event.html">events</a></li>
+        </ul>
+    </nav>
+
+    <blockquote>
+        <h2>Arrangement<br>
+         reserveren</h2>
+    </blockquote>
+</header>
+<section class="reserverensecion">
+    <a href="arrangement.html"> <button class="backbtn">&lt; Terug</button></a>
+
+    <div class="formbox">
+        <div class="rondleidingInfo">
+            <h3>rondleiding </h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zB1yWY2u_L4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="rowPics">
+            <div class="row">
+                <div class="column">
+                    <img src="img/reserveren/img1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="img/reserveren/img2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="img/reserveren/img3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="img/reserveren/img4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="img/reserveren/bar.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="img/reserveren/proeflokaal.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="img/reserveren/rondleiding.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="img/reserveren/wide4.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="columnI">
+                        <div class="column">
+                            <img class="demo" src="img/reserveren/img1.png" onclick="currentSlide(1)" alt="rondleiding">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="img/reserveren/img2.png" onclick="currentSlide(2)" alt="rondleiding">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="img/reserveren/img3.png" onclick="currentSlide(3)" alt="rondleiding">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="img/reserveren/img4.png" onclick="currentSlide(4)" alt="rondleiding">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+    <div class="formbox">
+        <div class="formContact">
+            <form action="php/sendReservation.php" method="post">
+                <div class="formID">
+                    <label for="arrangement"><p>Arrangement&#58;&#42; </p></label>
+                    <select class="formID" id="arrangement">
+                        <option value="rondleiding">Rondleiding</option>
+                        <option value="proeflokaal">Proeflokaal cursus</option>
+                        <option value="bar">bar reserveren</option>
+                    </select>
+                </div>
+
+                <div class="formID">
+                    <label for="date"><p>Gewenste datum&#58;&#42; </p></label>
+                    <input type="date" id="date" value="test">
+                </div>
+
+                <div class="formID">
+                    <label for="time"><p>Gewenste tijd&#58; </p></label>
+                    <input type="time" id="tijd"  required>
+                </div>
+
+                <div class="formID">
+                    <label for="aantalP"><p>Aantal personen&#58; </p></label>
+                    <input type="number" id="aantalP" name="phone" value="1" required>
+                </div>
+                <div class="formID">
+                    <label for="vname"><p>Voornaam&#58;&#42; </p></label>
+                    <input type="text" id="vname" value="john" required>
+                </div>
+
+                <div class="formID">
+                    <label for="aname"><p>Achternaam&#58;&#42; </p></label>
+                    <input type="text" id="aname" value="doe" required>
+                </div>
+
+                <div class="formID">
+                    <label for="email"><p>E-mail&#58;&#42; </p></label>
+                    <input type="email" id="email" value="john@doe.com" required>
+                </div>
+
+                <div class="formID">
+                    <label for="phone"><p>Mobiele telefoonummer&#58; </p></label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{2}-0-9]{8}" required>
+                </div>
+
+                <div class="formNet formID">
+                    <label for="comments">Opmerking&#58; </label>
+                    <textarea id="comments"> </textarea>
+                    <input type="submit"  class="formsendBtn" value="verzenden">
+                    <p> &#42; &#61; verplichte velden </p>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="promosection whiteground">
+    <article>
+        <div class="promo">
+            <img src="img/promo/promo.png" alt="promo">
+            <a href="biercollectie/bruteforce.html"> <button class="promobutton">bekijk</button></a>
+        </div>
+    </article>
+    <article>
+        <div id="arcade"><img src="img/promo/poster-arcade.png">
+            <a href="event.html"><button class="promobutton" >join</button></a>
+        </div>
+    </article>
+</section>
+
+<footer>
+    <div class="menu">
+        <ul>
+            <li><img src="img/navbar/logo.png" alt="logo"></li>
+            <li><a href="contact.html">openingstijden</a></li>
+            <li><a href="contact.html">vacature</a></li>
+            <li><a href="404.html">retail</a></li>
+            <li><a href="faq.html">faq</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </div>
+    <div class="nieuwsbrief">
+        <div class="footertext">
+            <h4>inschrijven nieuwsbrief</h4>
+            <p>Blijf op de hoogte van de allerlaaste aanbiedingen, speciale actie's, die voor jou  intersaante evenementen en meer.  </p>
+        </div>
+        <form action="#" method="post">
+            <label for=fanmail></label>
+            <input type="email" id="fanmail" value="vul E-mail adres in">
+            <input type="submit"  class="nieuwsbriefButton" value="verzenden">
+        </form>
+        <div class="socialIcons">
+            <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-medium fa-3x" aria-hidden="true"></i>
+        </div>
+    </div>
+</footer>
+<div class="onderfooter">
+    <p>&copy; 2020. all rights reserved</p>
+</div>
+</body>
+</html>
